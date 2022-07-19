@@ -12,6 +12,7 @@ body {
     background-image: url(../images/background.jpg);
     font-size: 1.5rem;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 #backdrop {
@@ -43,6 +44,26 @@ form {
     width: 50%;
     margin: auto;
     background-color: #1b1b32cc;
+    padding: 36px;
+    border-radius: 5px;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+}
+
+.textarea_cls{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    padding: 15px 0;
+}
+
+input, select{
     padding: 10px;
     border-radius: 5px;
+    border: none;
 }

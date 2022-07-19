@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styled.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+    </style>
 </head>
 
 <body>
@@ -30,13 +33,20 @@
                 <option value="4">Prefer not to say</option>
                 <option value="5">Other</option>
             </select>
+            
             <label>Would you recommend freeCodeCamp to a friend?</label>
-            <input id="definitely" type="radio" name="recommend-friend" value="Definitely">
-            <label for="definitely">Definitely</label><br>
-            <input type="radio" id="may-be" name="recommend-friend" value="Maybe">
-            <label for="may-be">Maybe</label><br>
-            <input type="radio" id="not-sure" name="recommend-friend" value="Not sure">
-            <label for="not-sure">Not sure</label>
+                <div class="radio_btn">
+                    <input id="definitely" type="radio" name="recommend-friend" value="Definitely">
+                    <label for="definitely">Definitely</label>
+                </div>
+                <div class="radio_btn">
+                    <input type="radio" id="may-be" name="recommend-friend" value="Maybe">
+                    <label for="may-be">Maybe</label><br>
+                <div class="radio_btn">
+                    <input type="radio" id="not-sure" name="recommend-friend" value="Not sure">
+                    <label for="not-sure">Not sure</label>
+                </div>    
+
             <label id="favorite-feature-label" for="favorite-featur">What is your favorite feature of freeCodeCamp?</label>
             <select name="favorite-feature" id="drop-down">
                 <option value="0" selected disabled>Select an option</option> 
@@ -62,9 +72,10 @@
             <input id="open-source-community" type="checkbox" value="Open Source Community">
             <label for="open-source-community">Open Source Community</label><br>
 
+            <div class="textarea_cls">
             <label>Any comments or suggestions?</label>
             <textarea id="suggestions" placeholder="Enter your comment here"></textarea>
-
+            </div>    
             <button type="submit" id="submit">Submit</button>
         </div>
     </form>
