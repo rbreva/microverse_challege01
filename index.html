@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styled.css">
 </head>
 
 <body>
-    <h1>freeCodeCamp Survey Form</h1>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
-    <form id="" survey-form>
+    <form id="survey-form">
         <label id="name-label" for="name">Name</label>
         <input id="name" type="text" name="name" placeholder="Enter your name" required>
         <label id="email-label" for="email">Email</label>
@@ -18,7 +19,7 @@
         <label id="number-label" for="number">Age(optional)</label>
         <input id="number" type="number" name="number" placeholder="Age" min="0" max="100">
         <label id="roles-label" for="role">Which option best describes your current role?</label>
-        <select name="roles" id="drop-down">
+        <select name="roles" id="dropdown">
             <option value="0" selected disabled>Select current role</option> 
             <option value="1">Student</option>
             <option value="2">Full Time Job</option>
@@ -26,13 +27,13 @@
             <option value="4">Prefer not to say</option>
             <option value="5">Other</option>
         </select>
-        <label id="" for="number">Would you recommend freeCodeCamp to a friend?</label>
-        <input id="definitely" type="radio" name="recommend-friend" value="Definitely">
-        <label for="definitely">Definitely</label><br>
-        <input type="radio" id="may-be" name="recommend-friend" value="Maybe">
-        <label for="may-be">Maybe</label><br>
-        <input type="radio" id="not-sure" name="recommend-friend" value="Not sure">
-        <label for="not-sure">Not sure</label>
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+            <input id="definitely" type="radio" name="recommend-friend" value="Definitely">
+            <label for="definitely">Definitely</label><br>
+            <input type="radio" id="may-be" name="recommend-friend" value="Maybe">
+            <label for="may-be">Maybe</label><br>
+            <input type="radio" id="not-sure" name="recommend-friend" value="Not sure">
+            <label for="not-sure">Not sure</label>
         <label id="favorite-feature-label" for="favorite-featur">What is your favorite feature of freeCodeCamp?</label>
         <select name="favorite-feature" id="drop-down">
             <option value="0" selected disabled>Select an option</option> 
@@ -40,6 +41,29 @@
             <option value="2">Projects</option>
             <option value="3">Community</option>
             <option value="4">Open source</option>
+
+        <label>What would you like to see improved? (Check all that apply)</label>
+
+            <input id="front-end-projects" type="checkbox" value="Front-end Projects">
+            <label for="front-end-projects">Front-end Projects</label><br>
+
+            <input id="back-end-projects" type="checkbox" value="Back-end Projects">
+            <label for="back-end-projects">Back-end Projects</label><br>
+             
+            <input id="data-visualization" type="checkbox" value="Data Visualization">
+            <label for="data-visualization">Data Visualization</label><br>
+
+            <input id="challenges" type="checkbox" value="Challenges">
+            <label for="challenges">Challenges</label><br>
+
+            <input id="open-source-community" type="checkbox" value="Open Source Community">
+            <label for="open-source-community">Open Source Community</label><br>
+        
+        <label>Any comments or suggestions?</label>
+            <textarea id="suggestions" placeholder="Enter your comment here"></textarea>    
+        
+        <button type="submit" id="submit">Submit</button>    
+
         </select>
     </form>
 </body>

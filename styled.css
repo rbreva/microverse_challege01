@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+html{
+    font-size: 62.5%; /*base 10*/
+}
+
+body{
+    background-image: url(../images/background.jpg);
+    font-size: 1.5rem;
+}
+
+#title{
+    text-align: center;
+    padding:10px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#description{
+    text-align: center;
+    padding:10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+form{
+    width: 50%;
+    margin: auto;
+    background-color: #1b1b32cc;
+    padding: 10px;
+    border-radius: 5px;
+}
